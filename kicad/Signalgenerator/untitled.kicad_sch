@@ -1049,6 +1049,18 @@
 		(uuid "d6acd60d-d40c-48ba-bdd8-51c60af01ca5")
 	)
 	(junction
+		(at 85.09 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d998b3ad-7cbf-4f48-9b4d-57cbd2522d17")
+	)
+	(junction
+		(at 85.09 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "daa6950c-cc0e-42ba-858d-f3df813889bc")
+	)
+	(junction
 		(at 95.25 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1172,6 +1184,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 90.17) (xy 88.9 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6889b306-d779-4fc4-ba78-65df8e7ab6c2")
+	)
+	(wire
+		(pts
 			(xy 184.15 87.63) (xy 186.69 87.63)
 		)
 		(stroke
@@ -1212,7 +1234,17 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 90.17) (xy 88.9 90.17)
+			(xy 85.09 97.79) (xy 95.25 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80ae103d-9a29-439b-992e-e44aa2b67dfc")
+	)
+	(wire
+		(pts
+			(xy 78.74 90.17) (xy 85.09 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1352,7 +1384,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 97.79) (xy 95.25 97.79)
+			(xy 78.74 97.79) (xy 85.09 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2148,7 +2180,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "4.7u"
+		(property "Value" "2.2u"
 			(at 82.55 95.2499 0)
 			(effects
 				(font
@@ -2261,6 +2293,76 @@
 			(project "Signalgenerator"
 				(path "/8862b47a-3c46-4bfb-a99b-c8e005d2d344/03138af8-b262-40e9-ad79-63335365d49e"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 85.09 93.98 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e506c3cc-2e6b-4fa3-82ce-397d9b5f689d")
+		(property "Reference" "C5"
+			(at 88.9 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2.2u"
+			(at 88.9 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 84.1248 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 85.09 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "37c10552-06d7-4cf6-b693-46ab7457f280")
+		)
+		(pin "2"
+			(uuid "625f3ae6-8bdd-481b-ba73-69c82eb67a4a")
+		)
+		(instances
+			(project "Signalgenerator"
+				(path "/8862b47a-3c46-4bfb-a99b-c8e005d2d344/03138af8-b262-40e9-ad79-63335365d49e"
+					(reference "C5")
 					(unit 1)
 				)
 			)
