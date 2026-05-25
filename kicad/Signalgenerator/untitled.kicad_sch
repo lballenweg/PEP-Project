@@ -1209,10 +1209,22 @@
 		)
 	)
 	(junction
+		(at 176.53 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c65c3c0-30af-4c4e-9714-b7020d058737")
+	)
+	(junction
 		(at 78.74 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0d6b0d2a-a7fa-4859-a7b6-48c620f75ec6")
+	)
+	(junction
+		(at 180.34 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f1423f6-cbbb-4a63-b4a6-9d53d7aa0bb1")
 	)
 	(junction
 		(at 95.25 97.79)
@@ -1338,6 +1350,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 87.63) (xy 184.15 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c450b68-598e-405a-9dfb-168a3c6f11e0")
+	)
+	(wire
+		(pts
 			(xy 95.25 97.79) (xy 95.25 92.71)
 		)
 		(stroke
@@ -1348,7 +1370,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 87.63) (xy 184.15 87.63)
+			(xy 179.07 87.63) (xy 180.34 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1398,7 +1420,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 87.63) (xy 179.07 87.63)
+			(xy 171.45 87.63) (xy 176.53 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1558,6 +1580,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 95.25) (xy 180.34 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e04dcb6-b604-432d-8dc9-ff7481c96082")
+	)
+	(wire
+		(pts
 			(xy 171.45 104.14) (xy 88.9 104.14)
 		)
 		(stroke
@@ -1648,6 +1680,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 87.63) (xy 179.07 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac3fcb69-76e7-4aec-9f28-0f3fd94129f6")
+	)
+	(wire
+		(pts
 			(xy 163.83 90.17) (xy 158.75 90.17)
 		)
 		(stroke
@@ -1715,6 +1757,28 @@
 			(type default)
 		)
 		(uuid "fd2487ce-fd86-43c1-bd98-7505849b16ff")
+	)
+	(global_label "Ub-"
+		(shape input)
+		(at 180.34 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0ad69b53-89e9-4526-8fa6-fdf56ebe0661")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.3771 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "Ub-"
 		(shape input)
@@ -2172,6 +2236,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 180.34 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "18dacaa3-381d-4f16-ac9c-350d9ba6a4a2")
+		(property "Reference" "C9"
+			(at 184.15 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 184.15 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 181.3052 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 180.34 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3178e7b9-33e1-4941-a4a9-68ef74530be9")
+		)
+		(pin "1"
+			(uuid "8b2f85d0-adf1-421b-867e-028ba2b8c75b")
+		)
+		(instances
+			(project "Signalgenerator"
+				(path "/8862b47a-3c46-4bfb-a99b-c8e005d2d344/03138af8-b262-40e9-ad79-63335365d49e"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 68.58 90.17 0)
 		(unit 1)
@@ -2232,6 +2366,76 @@
 			(project "Signalgenerator"
 				(path "/8862b47a-3c46-4bfb-a99b-c8e005d2d344/03138af8-b262-40e9-ad79-63335365d49e"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 176.53 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "531b7589-7321-4980-9ff6-773603469e60")
+		(property "Reference" "C7"
+			(at 180.34 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 180.34 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 177.4952 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 176.53 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "30957569-2763-43f2-99e8-b593f800e77e")
+		)
+		(pin "2"
+			(uuid "3535a658-21c7-49e5-80c6-1b8d3887e13d")
+		)
+		(instances
+			(project "Signalgenerator"
+				(path "/8862b47a-3c46-4bfb-a99b-c8e005d2d344/03138af8-b262-40e9-ad79-63335365d49e"
+					(reference "C7")
 					(unit 1)
 				)
 			)
